@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+<h1>PROGRAMA ADIVINANZA</h1>
+
+<body>
+
+    <script>
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+
+        var numeroEsperado = Math.round(Math.random()*10);
+        var numeroTirado = parseInt(prompt("Ingrese un número de 0-10"));
+
+        if (numeroEsperado == numeroTirado){
+
+            imprimir("¡¡¡Ud acertó con el número: " + " "+numeroEsperado+" "+ "!!!");
+
+        }
+
+       else {
+
+            imprimir("Ud. no acertó, lanzó el numero: "+" "+ numeroTirado + " "+ " y el numero esperado es: " + " " + numeroEsperado + " "+ "¡¡¡siga intentando!!!");
+        }
+
+    </script>
+</body>
+
+</html>

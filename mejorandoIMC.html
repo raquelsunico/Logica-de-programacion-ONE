@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+    <h1>PROGRAMA MEJORANDO IMC</h1>
+<body>
+
+    <script>
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+                        
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+
+        function calcularIMC(peso, altura) {
+
+            return (peso / (altura * altura));
+
+        }
+
+
+        nombre = prompt("Informe su nombre");
+        pesoInformado = prompt(nombre + " " + "informe su peso"); //para interactuar con el usuario usamos prompt
+        alturaInformado = prompt(nombre + " " + "informe su altura");
+        imcCalculado = calcularIMC(pesoInformado, alturaInformado);
+        
+        imprimir(nombre + ", " + "su índice IMC calculado es: " + " " + imcCalculado);
+
+        if (imcCalculado < 18.5) {
+
+            imprimir("Su IMC presenta insuficiencia ponderal");
+        
+        }
+
+        if (imcCalculado >= 18.5){ 
+        
+            if (imcCalculado < 25) {
+            
+                imprimir("Su IMC está en un intérvalo normal"); 
+         
+            }
+        }
+
+             
+        if (imcCalculado >= 25) { 
+
+            if (imcCalculado < 30) {
+            
+                imprimir("Su IMC presenta sobrepeso"); 
+        
+            }
+        }
+
+        if (imcCalculado > 30) {
+                    
+            imprimir("Su IMC presenta obesidad"); 
+        
+        }
+
+    
+    </script
+    
+</body>
+
+</html>

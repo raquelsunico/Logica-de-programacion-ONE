@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular </title>
+</head>
+<h1>PROGRAMA - NUMERO PARES</h1>
+
+<body>
+
+    <script>
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+
+       var numero = 0;
+       
+       while (numero<=100){
+
+         if(numero % 2== 0){
+
+             imprimir(numero);
+         }
+             numero++;
+      }
+         imprimir("FIN WHILE") 
+
+
+
+        for (var num=0; num<=100; num++){
+           
+            if (num % 2 == 0){
+ 
+                imprimir(num);
+            }
+        }
+         imprimir("FIN FOR");
+                    
+    </script>
+</body>
+
+</html>

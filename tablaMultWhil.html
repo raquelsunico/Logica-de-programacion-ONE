@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular </title>
+</head>
+<h1>PROGRAMA - MULTIPLICADOR</h1>
+
+<body>
+
+    <script>
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+        
+        var multiplicador = 1;    
+        var numeroIngresado = parseInt(prompt("Ingrese un numero entre 1 y 10"));
+
+        while (multiplicador <= 10) {
+
+            imprimir(numeroIngresado * multiplicador);
+
+            multiplicador++;
+        }
+        
+    </script>
+</body>
+
+</html>

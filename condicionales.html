@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+
+<body>
+
+    <h1>PROGRAMA - CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+  
+  <script>
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+           
+        }
+
+        function imprimir(frase) {
+
+            document.write("<big>" + frase + "</big>");
+            saltarLinea();
+
+        }
+
+        var victorias = parseInt (prompt ("Informe la cantidad de victorias"));
+        var empates = parseInt (prompt ("Informe la cantidad de empates"));
+        var puntosTotales = (victorias * 3) + (empates);
+
+        imprimir("La cantidad de puntos totales es de: " + " "+ puntosTotales);
+
+            if (puntosTotales > 28){
+
+                 imprimir ("El equipo esta mejor que antes");
+            }
+       
+            if (puntosTotales < 28){
+
+                imprimir ("El equipo esta peor que antes");
+            }
+        
+            if (puntosTotales == 28){
+
+                imprimir ("El equipo esta igual que antes");
+            }
+
+        
+
+        
+    </script>
+
+</body>
+
+</html>
