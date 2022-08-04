@@ -8,42 +8,33 @@
 </head>
 <body>
 
-    <h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+    <h1>JUEGO SECRETO</h1>
+ 
+    <input type="text" name="texto" value="" placeholder="ingrese número">
+
+    <button>Verificar dato secreto</button>
 
 <script>
+   var secreto = 5;
+   var input = document.querySelector("input");
 
-    function saltarLinea() {
-        document.write("<br>");
-        document.write("<br>");
-        document.write("<br>");
-    }
 
-    function imprimir(frase) {
-        document.write(frase);
-        saltarLinea();
-    }
-    var numeroPensado = Math.round(Math.random() * 10);
-    var intentos = parseInt(prompt("Ingrese la cantidad de intentos entre un numero de 1-10"));
-    var contador = 1;
+   function verificar(){
+        
+    if(parseInt(input.value) == secreto){
 
-    while (contador <= intentos) {
-        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
-        if (numeroPensado == numeroLanzado) {
-            //corregir aquí
-            alert("usted acertó, en el intento " + contador + " el número pensado era " + numeroPensado);
-            break;
-        } else {
-            alert("usted erró");
+        alert ("Ud. acertó");
+
         }
-        contador++;
-    }
-    if (numeroPensado == numeroLanzado) {
-        //corregir aquí
-        imprimir("usted acertó, en el intento " + contador + " el número pensado era " + numeroPensado);
-    } else {
-        imprimir("usted erró, el número pensado era " + numeroPensado);
-    }
-    imprimir("fin");
+        else{
+        alert ("Ud. erró")
+        }
+   }
+
+   var button = document.querySelector("button"); 
+   button.onclick = verificar;
+
+    
 </script>
 
 </body>
